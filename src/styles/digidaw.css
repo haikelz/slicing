@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,700&family=Noto+Sans:wght@300;400;500;600;700&display=swap");
+
+body {
+  @apply font-notosans;
+}
+
+.gradient {
+  background: rgb(53, 57, 152);
+  background: linear-gradient(
+    90deg,
+    rgba(53, 57, 152, 1) 0%,
+    rgba(39, 99, 125, 1) 75%,
+    rgba(39, 99, 125, 1) 100%
+  );
+}

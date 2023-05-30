@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap");
+
+* {
+  @apply font-sanspro;
+}
+
+.angular-gradient {
+  background: conic-gradient(from 135deg at 10% 23%, #7435fa, #2eb4ff, #7b3dff, #d426ff, #ffbe72);
+}

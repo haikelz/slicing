@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,700&display=swap");
+
+* {
+  @apply font-dmsans text-white;
+}
+
+.background {
+  background: hsla(248, 96%, 62%, 1);
+
+  background: linear-gradient(
+    135deg,
+    hsla(248, 96%, 62%, 1) 0%,
+    hsla(235, 93%, 62%, 1) 50%,
+    hsla(209, 100%, 66%, 1) 76%,
+    hsla(248, 96%, 61%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    135deg,
+    hsla(248, 96%, 62%, 1) 0%,
+    hsla(235, 93%, 62%, 1) 50%,
+    hsla(209, 100%, 66%, 1) 76%,
+    hsla(248, 96%, 61%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    135deg,
+    hsla(248, 96%, 62%, 1) 0%,
+    hsla(235, 93%, 62%, 1) 50%,
+    hsla(209, 100%, 66%, 1) 76%,
+    hsla(248, 96%, 61%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#5B41FB", endColorstr="#4654F8", GradientType=1 );
+}
