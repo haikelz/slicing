@@ -15,7 +15,6 @@ export default function NotFoundPage() {
                 "hover:underline hover:underline-offset-4"
               )}
               to="/"
-              target="_blank"
             >
               Back to Home
             </Link>

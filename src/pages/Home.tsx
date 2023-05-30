@@ -5,7 +5,7 @@ import "../styles/home.css";
 const pagesList = [
   {
     id: 1,
-    route: "/comment",
+    route: "/comments",
   },
   {
     id: 2,
