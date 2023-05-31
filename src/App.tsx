@@ -1,3 +1,4 @@
+import { FC, useEffect, useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./index.css";
 import NotFoundPage from "./pages/404";
@@ -19,7 +20,35 @@ import TwitterEmbed from "./pages/TwitterEmbed";
 import GrolinLogin from "./pages/grolin/Login";
 import GrolinRegister from "./pages/grolin/Register";
 
-export default function App() {
+function Loading() {
+  return (
+    <div className="flex w-full items-center justify-center bg-black">
+      <main className="flex w-full max-w-7xl items-center justify-center">
+        <p className="font-rubik text-xl font-semibold">Loading....</p>
+      </main>
+    </div>
+  );
+}
+
+function LoadingWrapper(Component: FC) {
+  function loadingWrapper(props: {}) {
+    const [isLoading, setIsLoading] = useState<boolean>(true);
+
+    useEffect(() => {
+      setIsLoading(true);
+
+      setTimeout(() => {
+        setIsLoading(false);
+      }, 1000);
+    }, [setIsLoading]);
+
+    return isLoading ? <Loading /> : <Component {...props} />;
+  }
+
+  return loadingWrapper;
+}
+
+function App() {
   return (
     <BrowserRouter>
       <Routes>
@@ -45,3 +74,6 @@ export default function App() {
     </BrowserRouter>
   );
 }
+
+const AppWithLoading = LoadingWrapper(App);
+export default AppWithLoading;
