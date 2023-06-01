@@ -22,7 +22,7 @@ import GrolinRegister from "./pages/grolin/Register";
 
 function Loading() {
   return (
-    <div className="flex w-full items-center justify-center bg-black">
+    <div className="flex min-h-screen w-full items-center justify-center bg-black">
       <main className="flex w-full max-w-7xl items-center justify-center">
         <p className="font-rubik text-xl font-semibold">Loading....</p>
       </main>
