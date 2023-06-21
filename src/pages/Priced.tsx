@@ -1,4 +1,4 @@
-import clsx from "clsx";
+import { cx } from "class-variance-authority";
 import "../styles/priced.css";
 
 const basicFeaturesList = [
@@ -159,7 +159,7 @@ export default function Priced() {
             {navList.map((item) => (
               <li
                 key={item.id}
-                className={clsx(
+                className={cx(
                   "text-base text-white/60",
                   item.name === "Pricing" ? "font-bold" : "font-medium"
                 )}

@@ -1,5 +1,5 @@
 import { FC, useEffect, useState } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Switch } from "wouter";
 import "./index.css";
 import NotFoundPage from "./pages/404";
 import Comments from "./pages/Comments";
@@ -31,7 +31,7 @@ function Loading() {
 }
 
 function LoadingWrapper(Component: FC) {
-  function loadingWrapper(props: {}) {
+  function loadingWrapper(props: Record<string, never>) {
     const [isLoading, setIsLoading] = useState<boolean>(true);
 
     useEffect(() => {
@@ -50,28 +50,64 @@ function LoadingWrapper(Component: FC) {
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/musix-player" element={<MusixPlayer />} />
-        <Route path="/swiftship" element={<Swiftship />} />
-        <Route path="/testimonial" element={<Testimonial />} />
-        <Route path="/twitter-embed" element={<TwitterEmbed />} />
-        <Route path="/enlighten" element={<Enlighten />} />
-        <Route path="/nowted-hero" element={<NowtedHero />} />
-        <Route path="/kourse" element={<Kourse />} />
-        <Route path="/jobless" element={<Jobless />} />
-        <Route path="/priced" element={<Priced />} />
-        <Route path="/digidaw" element={<Digidaw />} />
-        <Route path="/grolin/register" element={<GrolinRegister />} />
-        <Route path="/grolin/login" element={<GrolinLogin />} />
-        <Route path="/faceless" element={<Faceless />} />
-        <Route path="/comments" element={<Comments />} />
-        <Route path="/movies" element={<Movies />} />
-        <Route path="/holadok" element={<Holadok />} />
-        <Route path="/" element={<Home />} />
-        <Route path="*" element={<NotFoundPage />} />
-      </Routes>
-    </BrowserRouter>
+    <>
+      <Route path="/musix-player">
+        <MusixPlayer />
+      </Route>
+      <Route path="/swiftship">
+        <Swiftship />
+      </Route>
+      <Route path="/testimonial">
+        <Testimonial />
+      </Route>
+      <Route path="/twitter-embed">
+        <TwitterEmbed />
+      </Route>
+      <Route path="/enlighten">
+        <Enlighten />
+      </Route>
+      <Route path="/nowted-hero">
+        <NowtedHero />
+      </Route>
+      <Route path="/kourse">
+        <Kourse />
+      </Route>
+      <Route path="/jobless">
+        <Jobless />
+      </Route>
+      <Route path="/priced">
+        <Priced />
+      </Route>
+      <Route path="/digidaw">
+        <Digidaw />
+      </Route>
+      <Route path="/grolin/register">
+        <GrolinRegister />
+      </Route>
+      <Route path="/grolin/login">
+        <GrolinLogin />
+      </Route>
+      <Route path="/faceless">
+        <Faceless />
+      </Route>
+      <Route path="/comments">
+        <Comments />
+      </Route>
+      <Route path="/movies">
+        <Movies />
+      </Route>
+      <Route path="/holadok">
+        <Holadok />
+      </Route>
+      <Route path="/">
+        <Home />
+      </Route>
+      <Switch>
+        <Route>
+          <NotFoundPage />
+        </Route>
+      </Switch>
+    </>
   );
 }
 

@@ -1,4 +1,4 @@
-import clsx from "clsx";
+import { cx } from "class-variance-authority";
 
 const navList = [
   {
@@ -64,13 +64,13 @@ const actionsList = [
 export default function Movies() {
   return (
     <div
-      className={clsx(
+      className={cx(
         "flex min-h-screen w-full flex-col items-center justify-start",
         "bg-gradient-to-br from-[#233458] to-[#111827]"
       )}
     >
       <nav
-        className={clsx(
+        className={cx(
           "sticky top-0 z-10 hidden w-full max-w-full items-center justify-center md:flex",
           "border-b border-b-[#535F77] bg-[#233458] p-4"
         )}
@@ -82,7 +82,7 @@ export default function Movies() {
               {navList.map((item) => (
                 <li key={item.id}>
                   <span
-                    className={clsx(
+                    className={cx(
                       item.name === "Movies"
                         ? "underline decoration-[#1D4ED8] decoration-4 underline-offset-8"
                         : ""
@@ -99,7 +99,7 @@ export default function Movies() {
               <input
                 type="text"
                 placeholder="Search.."
-                className={clsx(
+                className={cx(
                   "relative rounded-full bg-[#192642]",
                   "py-2 pl-10 pr-4",
                   "outline-none transition-all",
@@ -131,7 +131,7 @@ export default function Movies() {
               alt="one piece"
             />
             <button
-              className={clsx(
+              className={cx(
                 "mb-10 mt-7 flex items-center justify-center rounded-full",
                 "bg-white/[0.06] py-2"
               )}
@@ -156,13 +156,13 @@ export default function Movies() {
             </h2>
             <div>
               <div
-                className={clsx(
+                className={cx(
                   "my-10 flex w-full flex-col items-center justify-center space-y-4 xl:w-fit",
                   "md:flex-row md:space-x-4 md:space-y-0 xl:items-start xl:justify-start"
                 )}
               >
                 <button
-                  className={clsx(
+                  className={cx(
                     "flex w-full items-center justify-center space-x-4 rounded-full md:w-fit",
                     "bg-gradient-to-b from-[#7D96DC] to-[#1D4ED8]",
                     "px-12 py-4"
@@ -174,7 +174,7 @@ export default function Movies() {
                   <span className="text-2xl font-medium">Watch</span>
                 </button>
                 <button
-                  className={clsx(
+                  className={cx(
                     "flex w-full items-center justify-center space-x-4 md:w-fit",
                     "rounded-full bg-white/[0.04]",
                     "px-12 py-4"
@@ -187,7 +187,7 @@ export default function Movies() {
                 </button>
               </div>
               <div
-                className={clsx(
+                className={cx(
                   "flex w-full items-center justify-center space-x-8 xl:w-fit",
                   "border-b-2 border-b-[#242E43] py-3"
                 )}
@@ -206,7 +206,7 @@ export default function Movies() {
                     <div className="w-full sm:w-fit">
                       <h5 className="text-base font-bold">Written by</h5>
                       <div
-                        className={clsx(
+                        className={cx(
                           "my-7 flex items-center justify-center space-x-5",
                           "rounded-2xl bg-[#D9D9D9]/[0.08] px-3 py-4"
                         )}
@@ -236,7 +236,7 @@ export default function Movies() {
                       {detailFilmList.map((item) => (
                         <div key={item.id} className="flex justify-between">
                           <span
-                            className={clsx(
+                            className={cx(
                               item.name === "Genres" ||
                                 item.name === "Countries" ||
                                 item.name === "Duration"
@@ -254,7 +254,7 @@ export default function Movies() {
               </div>
               <div className="mt-6 flex w-fit space-x-5 xl:ml-6">
                 <button
-                  className={clsx(
+                  className={cx(
                     "flex items-center justify-center space-x-3",
                     "rounded-full bg-[#D9D9D9]/[0.08] px-3 py-2.5"
                   )}
@@ -268,7 +268,7 @@ export default function Movies() {
                   <span>+1</span>
                 </button>
                 <button
-                  className={clsx(
+                  className={cx(
                     "flex items-center justify-center space-x-3",
                     "rounded-full bg-[#D9D9D9]/[0.08] px-3 py-2.5"
                   )}

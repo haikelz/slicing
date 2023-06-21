@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "../styles/faceless.css";
-import clsx from "clsx";
+import { cx } from "class-variance-authority";
 
 export default function Faceless() {
   const [tab, setTab] = useState<"LOGIN" | "REGISTER">("LOGIN");
@@ -25,7 +25,7 @@ export default function Faceless() {
             <div className="space-x-5">
               <button type="button" aria-label="login tab" onClick={() => setTab("LOGIN")}>
                 <span
-                  className={clsx(
+                  className={cx(
                     "text-[14px] font-semibold leading-6 text-black",
                     tab === "LOGIN"
                       ? "underline decoration-[#228FA6] decoration-2 underline-offset-8"
@@ -37,7 +37,7 @@ export default function Faceless() {
               </button>
               <button type="button" aria-label="register tab" onClick={() => setTab("REGISTER")}>
                 <span
-                  className={clsx(
+                  className={cx(
                     "font-semibold text-black/40",
                     tab === "REGISTER"
                       ? "underline decoration-[#228FA6] decoration-2 underline-offset-8"

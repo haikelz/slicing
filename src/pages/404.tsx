@@ -1,5 +1,5 @@
-import clsx from "clsx";
-import { Link } from "react-router-dom";
+import { Paragraph } from "~/components/ui/typography";
+import { AnchorLink } from "~/components/ui/typography/AnchorLink";
 
 export default function NotFoundPage() {
   return (
@@ -7,18 +7,12 @@ export default function NotFoundPage() {
       <div className="w-full max-w-7xl">
         <div className="flex flex-col items-center justify-center text-center">
           <h1 className="text-5xl font-bold text-gray-200">404 😴</h1>
-          <p className="mt-3 text-xl font-medium text-gray-200">
+          <Paragraph intent="gray" className="mt-3 text-xl">
             Looks like the page that you want to visit is not found!{" "}
-            <Link
-              className={clsx(
-                "font-semibold text-white",
-                "hover:underline hover:underline-offset-4"
-              )}
-              to="/"
-            >
+            <AnchorLink to="/" type="Link" intent="withoutGradient" className="text-xl">
               Back to Home
-            </Link>
-          </p>
+            </AnchorLink>
+          </Paragraph>
         </div>
       </div>
     </div>

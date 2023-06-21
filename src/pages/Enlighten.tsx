@@ -1,4 +1,4 @@
-import clsx from "clsx";
+import { cx } from "class-variance-authority";
 import "../styles/enlighten.css";
 
 export default function Enlighten() {
@@ -11,7 +11,7 @@ export default function Enlighten() {
             <div className="mt-40 flex flex-col items-center justify-center">
               <div>
                 <span
-                  className={clsx(
+                  className={cx(
                     "w-fit rounded-full bg-[#113FE2]/10",
                     "px-5 py-1.5 text-sm font-bold",
                     "tracking-widest text-[#113FE2]"
@@ -28,7 +28,7 @@ export default function Enlighten() {
                 </p>
                 <div className="mb-4 mt-8 flex items-center justify-start space-x-4">
                   <input
-                    className={clsx(
+                    className={cx(
                       "rounded-md border-2 border-[#0A1B59]/20 px-5 py-3",
                       "placeholder:text-[#0A1B59]/60",
                       "focus:border-blue-500 focus:outline-none"
@@ -38,7 +38,7 @@ export default function Enlighten() {
                     placeholder="Email address"
                   />
                   <button
-                    className={clsx(
+                    className={cx(
                       "rounded-md bg-[#113FE2] px-5 py-3 hover:bg-blue-800",
                       "focus:ring-2 focus:ring-blue-300"
                     )}

@@ -1,4 +1,4 @@
-import clsx from "clsx";
+import { cx } from "class-variance-authority";
 import "../styles/digidaw.css";
 
 const navList = [
@@ -28,7 +28,7 @@ export default function Digidaw() {
               {navList.map((item) => (
                 <li key={item.id}>
                   <span
-                    className={clsx(
+                    className={cx(
                       "text-base font-semibold",
                       item.name === "Home" ? "text-white" : "text-white/60"
                     )}

@@ -1,4 +1,4 @@
-import clsx from "clsx";
+import { cx } from "class-variance-authority";
 import { useState } from "react";
 import "../styles/nowted-hero.css";
 
@@ -7,7 +7,7 @@ export default function NowtedHero() {
 
   return (
     <div
-      className={clsx(
+      className={cx(
         "flex min-h-screen w-full items-start justify-center",
         "bg-[#181818] bg-[url('/assets/nowted-hero/radial-gradient.svg')]",
         "bg-cover bg-center bg-no-repeat p-4"
@@ -90,7 +90,7 @@ export default function NowtedHero() {
             Effortlessly access your notes from any device with our convenient cloud-based solution.
           </p>
           <button
-            className={clsx(
+            className={cx(
               "flex items-center justify-center",
               "space-x-3 rounded-sm bg-[#3A3AF4]",
               "px-8 py-4",

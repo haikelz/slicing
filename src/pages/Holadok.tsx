@@ -1,4 +1,4 @@
-import clsx from "clsx";
+import { cx } from "class-variance-authority";
 import "../styles/holadok.css";
 import { useCallback, useEffect, useState } from "react";
 
@@ -67,7 +67,7 @@ export default function Holadok() {
     <div className="flex w-full max-w-full items-center justify-center p-4 md:p-0">
       <div className="flex w-full flex-col">
         <div
-          className={clsx(
+          className={cx(
             "absolute z-50 hidden",
             "w-full items-center justify-center transition-all",
             "p-4",
@@ -86,7 +86,7 @@ export default function Holadok() {
                   {navList.map((item) => (
                     <li key={item.id}>
                       <span
-                        className={clsx(
+                        className={cx(
                           "text-base",
                           item.name === "Home" ? "font-semibold text-[#101C45]" : "text-black/80"
                         )}
@@ -102,7 +102,7 @@ export default function Holadok() {
                   Login
                 </button>
                 <button
-                  className={clsx(
+                  className={cx(
                     "border-2 border-[#101C45]",
                     "px-4 py-2",
                     "font-bold text-[#101C45] transition-all",
@@ -141,7 +141,7 @@ export default function Holadok() {
                 <img className="absolute bottom-0" src="/assets/holadok/doctor.png" alt="doctor" />
               </div>
               <div
-                className={clsx(
+                className={cx(
                   "absolute left-0 top-1/4 hidden",
                   "w-[292px] -translate-x-32 rounded-lg",
                   "bg-white p-4 drop-shadow-lg",
@@ -167,7 +167,7 @@ export default function Holadok() {
         <div className="mt-10 flex w-full items-center justify-center px-0 md:mt-0 md:px-4">
           <section className="z-10 w-full max-w-7xl bg-[#203271] p-10">
             <div
-              className={clsx(
+              className={cx(
                 "flex flex-col items-center justify-center",
                 "space-y-10",
                 "md:flex-row md:space-x-10 md:space-y-0"

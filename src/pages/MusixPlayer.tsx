@@ -1,4 +1,4 @@
-import clsx from "clsx";
+import { cx } from "class-variance-authority";
 import "../styles/musix-player.css";
 
 const playlist = [
@@ -33,14 +33,14 @@ export default function MusixPlayer() {
     <>
       <div className="flex items-center justify-center overflow-hidden">
         <div
-          className={clsx(
+          className={cx(
             "angular-gradient relative",
             "flex min-h-screen w-full scale-105 items-center justify-center",
             "opacity-90 blur-md"
           )}
         ></div>
         <main
-          className={clsx(
+          className={cx(
             "absolute z-10",
             "flex w-full max-w-[40rem] flex-col items-center justify-center",
             "text-white"

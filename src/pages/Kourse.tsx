@@ -1,4 +1,4 @@
-import clsx from "clsx";
+import { cx } from "class-variance-authority";
 import "../styles/kourse.css";
 
 const navList = [
@@ -23,7 +23,7 @@ const navList = [
 export default function Kourse() {
   return (
     <div
-      className={clsx(
+      className={cx(
         "flex min-h-screen w-full items-start justify-center",
         "bg-gradient-to-b from-[#192653] to-[#131D41]"
       )}
