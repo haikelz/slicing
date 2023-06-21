@@ -50,7 +50,7 @@ function LoadingWrapper(Component: FC) {
 
 function App() {
   return (
-    <>
+    <Switch>
       <Route path="/musix-player">
         <MusixPlayer />
       </Route>
@@ -102,12 +102,10 @@ function App() {
       <Route path="/">
         <Home />
       </Route>
-      <Switch>
-        <Route>
-          <NotFoundPage />
-        </Route>
-      </Switch>
-    </>
+      <Route>
+        <NotFoundPage />
+      </Route>
+    </Switch>
   );
 }
 
