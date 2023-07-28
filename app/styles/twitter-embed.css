@@ -1,0 +1,3 @@
+body {
+  @apply text-black dark:bg-[#243447] dark:text-white;
+}

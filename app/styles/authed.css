@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+* {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
+.right-side {
+  background: linear-gradient(180deg, #3730a3 0%, #312e81 100%);
+}

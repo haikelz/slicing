@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
+
+body {
+  @apply font-rubik;
+}
+
+@keyframes sakura {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spin-sakura {
+  animation-name: sakura;
+  animation-duration: 7500ms;
+  animation-timing-function: cubic-bezier(1, 1, 1, 1);
+  animation-iteration-count: infinite;
+}
