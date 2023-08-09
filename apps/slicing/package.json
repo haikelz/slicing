@@ -7,7 +7,6 @@
     "dev": "remix dev",
     "start": "netlify serve",
     "format": "prettier . --write",
-    "commit": "cz",
     "typecheck": "tsc -b"
   },
   "dependencies": {
