@@ -1,0 +1,26 @@
+{
+  "extends": "tsconfig/remixjs.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "~/*": [
+        "./app/*"
+      ]
+    },
+    "plugins": [
+      {
+        "name": "remix"
+      }
+    ]
+  },
+  "include": [
+    "remix.env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "server.js",
+    "remix.init/server.js"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
