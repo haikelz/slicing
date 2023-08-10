@@ -31,62 +31,62 @@ Berikut design-design yang sudah saya slicing sejauh ini:
 
 ### comments
 
-![comments](/public/docs/comment.png)
+![comments](/apps/slicing/public/docs/comment.png)
 
 ### digidaw
 
-![digidaw](/public/docs/digidaw.png)
+![digidaw](/apps/slicing/public/docs/digidaw.png)
 
 ### enlighten
 
-![enlighten](/public/docs/enlighten.png)
+![enlighten](/apps/slicing/public/docs/enlighten.png)
 
 ### faceless
 
-![faceless](/public/docs/faceless.png)
+![faceless](/apps/slicing/public/docs/faceless.png)
 
 ### grolin
 
-![grolin login](public/docs/grolin-login.png)
+![grolin login](/apps/slicing/public/docs/grolin-login.png)
 
-![grolin register](public/docs/grolin-register.png)
+![grolin register](/apps/slicing/public/docs/grolin-register.png)
 
 ### jobless
 
-![kourse](public/docs/jobless.png)
+![kourse](/apps/slicing/public/docs/jobless.png)
 
 ### holadok
 
-![holadok](public/docs/holadok.png)
+![holadok](/apps/slicing/public/docs/holadok.png)
 
 ### kourse
 
-![kourse](public/docs/kourse.png)
+![kourse](/apps/slicing/public/docs/kourse.png)
 
 ### movies-io
 
-![movies io](public/docs/movies-io.png)
+![movies io](/apps/slicing/public/docs/movies-io.png)
 
 ### musix-player
 
-![musix player](public/docs/musix-player.png)
+![musix player](/apps/slicing/public/docs/musix-player.png)
 
 ### nowted-hero
 
-![nowted hero](public/docs/nowted-hero.png)
+![nowted hero](/apps/slicing/public/docs/nowted-hero.png)
 
 ### priced
 
-![priced](public/docs/priced.png)
+![priced](/apps/slicing/public/docs/priced.png)
 
 ### swiftship
 
-![swiftship](/public/docs/swiftship.png)
+![swiftship](/apps/slicing/public/docs/swiftship.png)
 
 ### testimonial
 
-![testimonial](public/docs/testimonial.png)
+![testimonial](/apps/slicing/public/docs/testimonial.png)
 
 ### twitter-embed
 
-![twitter embed](public/docs/twitter-embed.png)
+![twitter embed](/apps/slicing/public/docs/twitter-embed.png)
